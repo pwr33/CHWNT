@@ -7,7 +7,7 @@ Wifi - "Loudness Wars" like the period in audio recordings where they were tryin
 
 I guess it's a design principle, a common problem, so design to not be there longer than necessary, and back-out if contention for logging-on....
 
-I guess with trilateration, might make a good guess at revenge attack targets, but, "an eye for an eye and soon the whole world will be blind" eh!
+I guess with trilateration, might make a good guess at revenge attack targets, but, "an eye for an eye and soon the whole world will be blind" eh! (and from my testing of same chips running same arduino-chain software, probability of false trilateration seems high.... long term calibration eh! seal of mi-5 approval LOL)
 
 Ideally I'm thinking port-knocking using packet injection of a custom packet on an esp-8266 with a guard/tripwire esp-8266 doing monitoring on each pi, esp-8266 seem much harder to disrupt off wifi compared to an old pi-zero running a full linux.
 
