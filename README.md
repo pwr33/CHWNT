@@ -10,3 +10,5 @@ I guess it's a design principle, a common problem, so design to not be there lon
 I guess with trilateration, might make a good guess at revenge attack targets, but, "an eye for an eye and soon the whole world will be blind" eh!
 
 Ideally I'm thinking port-knocking using packet injection of a custom packet on an esp-8266 with a guard/tripwire esp-8266 doing monitoring on each pi, esp-8266 seem much harder to disrupt off wifi compared to an old pi-zero running a full linux.
+
+8-2=6 eh! 
