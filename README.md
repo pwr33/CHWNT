@@ -7,12 +7,13 @@ Wifi - "Loudness Wars" like the period in audio recordings where they were tryin
 
 I guess it's a design principle, now a common problem, so design to not be there longer than necessary, and back-out if contention for logging-on....
 
-I guess with trilateration, might make a good guess at revenge attack targets, but, "an eye for an eye and soon the whole world will be blind" eh! (and from my testing of same chips running same arduino-chain software, probability of false trilateration seems high.... 1 of 4 chips seems v.good... long term calibration eh!  Find 4 or more good ones, the ESP8266's not even receiving the same packets.)
+I guess with trilateration, might make a good guess at revenge attack targets, but, "an eye for an eye and soon the whole world will be blind" eh! (and from my testing of same chips running same arduino-chain software, probability of false trilateration seems high.... 1 of 4 chips seems v.good... long term calibration eh!  Find 4 or more good ones, the ESP8266's not even receiving the same packets.  Ah! but that's possibly to do with how long the ISR is taking, very burst based.)
 
 I guess if you really want to get into it need multiple sdr radios sweeping eh! trusted chips eh!  I guess detecting a radio receiver would be a handy trick.... any electronics probably a transmiter....
 
 Ideally I'm thinking port-knocking using packet injection of a custom packet on an esp-8266 with a guard/tripwire esp-8266 doing monitoring on each pi, esp-8266 seem much harder to disrupt off wifi compared to an old pi-zero running a full linux.
 
-Static IP addresses on raspberry nodes will improve the wifi connect process, no dhcp negotiation required each time up, just a pain in the neck to manage manually rather than setting by mac address on the router.
+Static IP addresses on raspberry nodes will improve the wifi connect process, no dhcp negotiation required each time up, just a pain in the neck to manage manually rather than setting by mac address on the router.  Well, that backfired, winds up putting out loads of dhcp who has this ip traffic.... tricksy area wifi...
 
-Another one of those things that you can spend a lot of time on to be negated as soon as the the zero-2w becomes available which I read does wpa3, I have not got my hands on one yet...
+Another one of those things that you can spend a lot of time on to be negated as soon as the the zero-2w becomes available which I read does wpa3, I have not got my hands on one yet...  Actually supposed to be an official broadcom driver for pi-zero era chipset that works with wpa-3 but have to faff around with D.I.Y.
+
